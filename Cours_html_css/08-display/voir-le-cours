@@ -1,0 +1,10 @@
+https://github.com/seasgit/bases_html_css/wiki/H-display
+
+Vu en classe
+
+Les boites en section sont par défaut en display-block (en superposition)
+Les a sont par défaut en display-inline (côte à côte) ou display-inline:block
+display:none = cache un élément  
+visibility:hidden masque un élément
+Diplay-flex
+

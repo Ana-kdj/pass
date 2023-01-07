@@ -1,0 +1,7 @@
+/* Il ne peut y avoir qu'un seul #Bigtitle
+dans une page web courante */
+#bigtitle{
+font-size: 50px;
+color:goldenrod;
+text-align: center;
+}

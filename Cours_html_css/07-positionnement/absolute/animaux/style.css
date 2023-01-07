@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+/* la section parent */
+.galerie{
+    position: relative;
+margin: 150px auto 0px auto;
+width: 200px;
+height: 300px;
+border: 5px solid gray;
+}
+
+/* les éléments img de la section */
+.galerie img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.menu{
+    position: absolute;
+    right: -45px;
+    top: -5px;
+    width: 40px;
+    height: 80px;
+    background:gray;
+}
+
+.menu a{
+        /* permet de transformer l'ancre en boite */
+    display: block; 
+    width: 15px;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    background: #000;
+    border-radius: 100%;
+}
+
+/* hover = quand on survole l'endroit */
+.menu a:hover{
+    background: orange;
+}
+
+/* chaque img ciblée passe devant en cliquant sur la puce*/
+img:target{
+    z-index:1;
+}

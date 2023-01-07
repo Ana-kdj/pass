@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin: 50px auto 0 auto;
+    width: 700px;
+    height: 400px;
+    background-image: url(../../data/Images/pexels-lumn-167699.jpg);
+    background-size: 100%;
+}
+
+section h1{
+    text-align: center;
+    /* interlignage = hauteur de la boite */
+    line-height: 400px;
+    color: #081b2b;
+    font-size: 50px;
+}

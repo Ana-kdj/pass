@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.logo{
+    width: 80px;
+}
+
+.menu a{
+margin-left: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+body{
+    background: url(../../data/freepik-source/taking-care-of-our-earth/nuage_bas.svg), url(../../data/freepik-source/taking-care-of-our-earth/nuage_haut.svg);
+    background-position: -300px 430px,700px -305px;
+    background-size: 50%, 80%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.image{
+margin-top: 40px;
+    float: right;
+    width: 700px;
+}
+
+.right{
+    display: flex;
+justify-content: center;
+    margin-top: 70px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.Texte{
+    display: flex;
+    flex-direction: column;
+}

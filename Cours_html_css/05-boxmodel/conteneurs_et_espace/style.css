@@ -1,0 +1,33 @@
+/* padding permet de gérer l'espace interne */
+/* *{ permet de reset les boites */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header,
+article{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    background-color:brown;
+    margin-bottom: 20px;
+}
+
+article{
+    height: auto;
+    text-align: justify;
+    line-height: 20px;
+    background-color: gray;
+    font-family: sans-serif;
+    /* espace interne */
+    padding: 10px 20px 10px 20px;
+    /* hack pour éviter la dilatation des boites */
+    box-sizing: border-box;
+}

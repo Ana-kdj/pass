@@ -1,0 +1,31 @@
+p{
+    font-size: 24px;
+    font-family: sans-serif;
+    word-spacing: 16px;
+}
+
+/* nth-of-type(1) cible le premier span en gros */
+p span:nth-of-type(1){
+    font-size: 50px;
+}
+
+/* nth-last-of-type(2n) cible les pairs */
+p span:nth-last-of-type(2n){
+    color: blueviolet;
+}
+
+/* nth-last-of-type(2n-1) cible les impairs */
+p span:nth-last-of-type(2n-1){
+    color: rgb(83, 161, 98);
+}
+
+p span{
+    display:inline-block;
+    transition: 0.4s;
+}
+
+/* cursor: pointer; pour mettre le curseur actif */
+p span:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+}

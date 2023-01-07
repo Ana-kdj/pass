@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    background: rgb(255, 38, 0);
+    /* disables highlighting on mobile */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+canvas {
+    outline: none;
+    display: block;
+}
+
+        .spline-watermark {
+            position: absolute;
+            z-index: 2;
+            bottom: 20px;
+            right: 20px;
+            width: 137px;
+            height: 36px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            border-radius: 12px;
+            background: linear-gradient(180deg, 0%, #ff0404 100%);
+            box-shadow: inset 0px -2px 0px -1px , inset 0px 1px 0px rgba(252, 3, 3, 0.936);
+        }
+        .spline-watermark span {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url(https://app.spline.design/_assets/_icons/icon_favicon32x32.png);
+            background-size: cover;
+        }
+        .spline-watermark svg {
+            display: block;
+            margin-right: 2px;
+        }
+        .spline-watermark:hover {
+            background: linear-gradient(180deg, #ff7300 0%, #e7a918 100%);
+        }
+
+        @font-face{
+            font-family: 'Circular'; 
+            font-weight: 400;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.eot);
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.eot?#iefix) format('embedded-opentype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.woff2) format('woff2'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.woff) format('woff'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.ttf) format('truetype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Regular.svg) format('svg');
+        }
+        @font-face{
+            font-family: 'Circular'; 
+            font-weight: 700;
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.eot);
+            src: url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.eot?#iefix) format('embedded-opentype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.woff2) format('woff2'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.woff) format('woff'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.ttf) format('truetype'),
+                url(chrome-extension://mfidniedemcgceagapgdekdbmanojomk/font/Circular-Pro-Black-Bold.svg) format('svg');
+        }

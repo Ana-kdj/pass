@@ -1,0 +1,16 @@
+p{
+    font-family: sans-serif;
+    font-size: 30px;
+    /* avec !important le sélecteur naturel qui avait le moins de poids passe en priorité */
+    color: chocolate !important;
+}
+
+/* La class a plus de poids */
+.p1{
+    color: greenyellow;
+}
+
+/* Et l'id a plus de poids que la class */
+#pg1{
+    color: hotpink;
+}

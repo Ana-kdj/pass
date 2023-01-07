@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+section{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+        /* attention alignement de plusieurs rangées */
+    align-content: space-evenly;
+    width: 800px;
+    height: 600px;
+    background: grey;
+}
+
+body{
+    /* c'est 100% de la hauteur du viewport */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    width: 240px;
+    height: 180px;
+    background: darkcyan;
+}

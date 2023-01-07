@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+*{
+    /* cours 05:gestion des boxmodels */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* cours 09 : gestion des flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(167, 212, 254);
+}
+
+.container{
+    padding-left: 50px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    width: 960px;
+    height: 400px;
+    /* cours 06 : gestion des images */
+    background: url(../../data/freepik-source/think-green/fond.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.container h1{
+    margin-bottom: 5px;
+    font-size: 50px;
+    color: rgb(69 107 91);
+}
+
+.container h2{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.container p{
+    margin-bottom: 25px;
+    font-size: 18px;
+    width: 380px;
+    color: rgb(88, 135, 115);
+}
+
+figure img{
+    margin-right: 8px;
+}

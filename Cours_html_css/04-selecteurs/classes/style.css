@@ -1,0 +1,17 @@
+p{
+    font-size: 20px;
+}
+
+/* le "." est un sélecteur relatif à i, élement qui a un attribut class */
+.important{
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.alert{
+    color: orangered;
+}
+
+.info{
+    color: dodgerblue;
+}
