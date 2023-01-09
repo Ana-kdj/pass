@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body{
+    background: url("./images/fondnoel3.jpeg") ;
+    width: 100%;
+    overflow: hidden;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 19.5px -19.5px 19.5px rgba(194, 194, 194, 0.1), inset -19.5px 19.5px 19.5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(19.5px);
+    border-radius: 25px;
+}
+
+nav>span{
+    padding:20px;
+}
+
+section, main{
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    /* height: 100vh; */
+    color: #ffffff;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 100px;
+    height: calc(100% - 180px);
+}
+
+
+.right{
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(20deg);
+    right: 10px;
+    top: 50%;
+    animation:float 2s infinite ease-in-out;
+}
+
+
+.text-block{
+    text-align: center;
+}
+
+
+h1{
+    font-size: 6vw;
+    font-family: 'Merriweather', serif;
+    font-weight: 600px;
+}
+
+h2{
+    font-size: 6vw;
+    font-family: 'Parisienne',cursive;
+    color: #AC353C;
+}
+
+
+button{
+border-radius: 50px;
+padding:15px 18px;
+color: white;
+border: none;
+background-color: #067655;
+font-size: 17px;
+margin-right: 20px;
+cursor: pointer;
+box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+display: flex;
+margin-bottom: 40px;
+
+}
+
+
+@keyframes float {
+	0% {
+		margin-top: -10px;
+	}
+	50% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: -10px;
+	}
+}
