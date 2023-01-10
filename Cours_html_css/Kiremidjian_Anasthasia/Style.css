@@ -1,45 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* Typo h1 */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap');
 
-body{
-    background: url("./images/fondnoel3.jpeg") ;
+/* Typo span */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+
+body {
+    background: url("./images/fondnoel3.png");
     width: 100%;
     overflow: hidden;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+    margin-right: 300px;
 }
 
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: inset 19.5px -19.5px 19.5px rgba(194, 194, 194, 0.1), inset -19.5px 19.5px 19.5px rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(19.5px);
     border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5), inset 7.09128px -7.09128px 7.09128px rgba(214, 214, 214, 0.6), inset -7.09128px 7.09128px 7.09128px rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(47.5116px);
 }
 
-nav>span{
-    padding:20px;
+
+nav>span {
+    padding: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    cursor: pointer;
 }
 
-section, main{
+
+span:hover {
+    color: #067655;
+    transition: all 0.5s ease-out;
+}
+
+
+section,
+main {
     width: 100%;
     height: 100%;
 }
+
 
 .left {
     display: flex;
@@ -51,63 +71,263 @@ section, main{
     align-items: center;
     align-content: center;
     position: absolute;
-    margin-left: 50px;
-    margin-top: 100px;
+    margin-left: 220px;
+    margin-top: 60px;
     height: calc(100% - 180px);
 }
 
 
-.right{
+.right {
     position: absolute;
-    transform: translate(-50%, -50%) rotate(20deg);
-    right: 10px;
+    right: -50px;
     top: 50%;
-    animation:float 2s infinite ease-in-out;
 }
 
 
-.text-block{
+#product {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(20deg);
+    animation: 2s ease-in-out 0s infinite normal none running float;
+    right: -10px;
+}
+
+
+.arrow {
+    position: absolute;
+    display: flex;
+    margin-right: -500px;
+    margin-left: -1050px;
+}
+
+.arrow>img {
+    margin-left: 40px;
+    margin-top: 70px;
+    color: white;
+}
+
+
+.text-block {
     text-align: center;
 }
 
 
-h1{
-    font-size: 6vw;
+h1 {
+    font-size: 5vw;
     font-family: 'Merriweather', serif;
     font-weight: 600px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-h2{
+
+h2 {
     font-size: 6vw;
-    font-family: 'Parisienne',cursive;
-    color: #AC353C;
+    font-family: 'Pinyon Script', cursive;
+    color: #c73d46;
+    text-shadow: rgb(101, 101, 101) 0.1em 0.1em 0.3em;
 }
 
 
-button{
-border-radius: 50px;
-padding:15px 18px;
-color: white;
-border: none;
-background-color: #067655;
-font-size: 17px;
-margin-right: 20px;
-cursor: pointer;
-box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-display: flex;
-margin-bottom: 40px;
-
+h3 {
+    font-size: 3.5vw;
+    font-family: 'Pinyon Script', cursive;
+    color: #442615;
+    text-decoration: 1px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 4px 1px rgb(255 255 255 / 24%);
+    margin-top: 100px;
 }
 
 
+button {
+    padding: 15px 50px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(180deg, #078F67 0%, #04553D 100%);
+    box-shadow: 1.60837e-15px 26.2667px 52.5333px rgba(1, 24, 17, 0.4465), inset -7.11257e-16px -11.6157px 11.6157px #044D37, inset 7.11257e-16px 11.6157px 11.6157px #08976D;
+    border-radius: 31px;
+}
+
+
+button:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+    box-shadow: 1.60837e-15px 26.2667px 52.5333px rgba(1, 24, 17, 0.4465), inset -7.11257e-16px -11.6157px 11.6157px #ffffff, inset 7.11257e-16px 11.6157px 11.6157px #ffffff;
+    color: #067655;
+    transition: all 0.5s ease-out;
+}
+
+
+figure {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+
+figure:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* Animation flotaison Starbucks */
 @keyframes float {
-	0% {
-		margin-top: -10px;
-	}
-	50% {
-		margin-top: 10px;
-	}
-	100% {
-		margin-top: -10px;
-	}
+    0% {
+        margin-top: -10px;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+
+    100% {
+        margin-top: -10px;
+    }
+}
+
+
+/* Animation Snow */
+
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0% {
+        transform: translateX(0px)
+    }
+
+    50% {
+        transform: translateX(80px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s
 }
